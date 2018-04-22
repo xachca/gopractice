@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   redis: 
     image: redis
@@ -6,11 +6,3 @@ services:
       - "6379:6379"
     expose:
       - "6379"
-      
-  beigin:
-    build: "."
-    entrypoint: "dlv debug ./begin -l 0.0.0.0:2345 --headless=true --log=true -- server"
-    ports:
-      - "2345:2345"
-    expose:
-      - "2345"

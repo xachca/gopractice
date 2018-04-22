@@ -7,7 +7,7 @@ func main() {
 	fmt.Printf("hello, world\n")
 	client := redis.NewClient(&redis.Options{
 			Addr: "localhost:6379",
-			Password: "meg00d",
+			Password: "",
 			DB: 0,
 	})
 
